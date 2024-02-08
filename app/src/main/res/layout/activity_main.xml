@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nebo3"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <!-- Верхняя треть экрана - часы -->
+    <TextView
+        android:id="@+id/textViewClock"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="100sp"
+        android:text="00:00"
+        android:textColor="#333333"
+        android:textStyle="bold"/>
+
+    <!-- Нижние две трети экрана - цитаты -->
+    <TextView
+        android:id="@+id/textViewQuote"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textSize="40sp"
+        app:fontFamily="@font/aikar"
+        android:textStyle="bold"
+        android:text="Цитата"
+        android:textColor="@color/black"
+
+        />
+
+</LinearLayout>
